@@ -1,4 +1,4 @@
-var ReactDOM = require('react-dom');
+
 var React = require('react');
 var Router = require('react-router');
 var Route = Router.Route;
@@ -18,5 +18,5 @@ var routes = (
 );
 
 Router.run(routes, function(Handler){
-  ReactDOM.render(<Handler/>, document.getElementById('react-container'));
+  React.render(<Handler/>, document.getElementById('react-container'));
 });

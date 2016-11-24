@@ -8,4 +8,4 @@ app.use(express.static('./node_modules/bootstrap/dist'));
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
-})
+});

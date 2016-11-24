@@ -13,7 +13,7 @@ var Whoops404 = React.createClass({
 				<Link to="/">Join as Audience</Link>
 				<Link to="/speaker">Start the presentation</Link>
 				<Link to="/board">View the board</Link>
-
+				
 			</div>
 		);
 	}

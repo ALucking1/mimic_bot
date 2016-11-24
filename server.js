@@ -29,6 +29,8 @@ io.sockets.on('connection', function(socket) {
   console.log("Connected: %s sockets connected", connections.length);
 });
 
+console.log("Polling server is running at 'http://localhost:3000'");
+
 // app.listen(3000, function () {
 //   console.log('Example app listening on port 3000!');
 // });

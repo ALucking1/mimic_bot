@@ -6,7 +6,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        exclude: /(node_modules|app.js)/,
+        exclude: /(node_modules|server.js)/,
         loader: 'babel?presets[]=react'
       }
     ]

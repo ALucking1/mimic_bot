@@ -1,8 +1,19 @@
 var React = require('react');
+var io = require('socket.io-client');
 
 var APP = React.createClass({
-      render(){
-        return (<h1>Voting Poll</h1>);
+
+      componentWillMount() {
+        this.socket = io('http://localhost:3000');
+        this.socket.on('connect', this.connect);
+      },
+
+      connect() {
+        alert("Connected: " + this.socket.id);
+      },
+
+      render() {
+        return (<h1>Hello world form React</h1>);
       }
 });
 
